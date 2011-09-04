@@ -1,0 +1,54 @@
+# Copyright (C) 2010 WP HTML5 Category Selector
+# This file is distributed under the same license as the WP HTML5 Category Selector package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP HTML5 Category Selector 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-html5-category-selector\n"
+"POT-Creation-Date: 2011-07-15 23:39:33+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: inc/wp_html5_category_selector.class.php:29
+msgid "HTML5 Category Selector"
+msgstr ""
+
+#: inc/wp_html5_category_selector.class.php:39
+msgid ""
+"You shouldn't see this. This box contains the JavaScript to add the filter "
+"box."
+msgstr ""
+
+#: inc/wp_html5_category_selector.class.php:64
+msgid "Filter"
+msgstr ""
+
+#: inc/wp_html5_category_selector.class.php:64
+msgid "Type to filter"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP HTML5 Category Selector"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://www.fullondesign.co.uk/projects/wp-html5-category-selector-wordpress-"
+"plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds a filter input field to the category box on the add/edit post page."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mike Rogers"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.fullondesign.co.uk/"
+msgstr ""
