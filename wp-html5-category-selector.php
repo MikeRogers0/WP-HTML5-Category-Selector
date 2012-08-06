@@ -2,8 +2,8 @@
 /*
 Plugin Name: WP HTML5 Category Selector
 Plugin URI: http://www.fullondesign.co.uk/projects/wp-html5-category-selector-wordpress-plugin
-Description: Adds a filter input field to the category box on the add/edit post page.
-Version: 1.0.2
+Description: Adds a filter input field to the category box on the add/edit post pages.
+Version: 1.1.0
 Author: Mike Rogers
 Author URI: http://www.fullondesign.co.uk/
 Text Domain: wp_html5_category_selector
@@ -28,15 +28,64 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-// Define the variables used in the plugin.
-define('wp_html5_category_selector_version', '1.0.2');
-
-// Set of up localisation
+/**
+ * Set of up localisation
+ */
 load_theme_textdomain('wp_html5_category_selector');
 
-// Include the class
-require('inc/wp_html5_category_selector.class.php');
+/**
+ * This holds all the functionality of the WP HTML category selector
+ */
 
-// Run the plugin.
+class wp_html5_category_selector {
+	/**
+	 * Ques up the requires actions & filters. 
+	 */
+	public function __construct() {
+		add_action('admin_init', array($this, 'admin_init') );
+		add_filter('plugin_row_meta', array($this, 'extra_plugin_links'), 10, 2);
+	}
+	
+	/**
+	 * Registers the css & javascript to run only in the admin section
+	 */
+	public function admin_init(){
+		/**
+		 * First, set up the js to run in the footer of the page and be localised.
+		 * Than the css.
+		 */
+		wp_register_script('wp_html5_category_selector', WP_PLUGIN_URL . '/wp-html5-category-selector/wp-html5-category-selector.js', false, false, true);
+		wp_localize_script( 'wp_html5_category_selector', 'objectL10n', array(
+			'filter' => __('Filter'),
+			'type_to_filter' => __('Type to filter'),
+			'clear' => __('Clear')
+		));
+		
+		wp_register_style('wp_html5_category_selector', WP_PLUGIN_URL . '/wp-html5-category-selector/admin.css');
+		
+		/**
+		 * Now tell them to run with jquery.
+		 */
+		wp_enqueue_script('jquery');
+		wp_enqueue_script('wp_html5_category_selector');
+		wp_enqueue_style('wp_html5_category_selector');
+	}
+	
+	/**
+	 * Adds my twitter link to the plugins page.
+	 *
+	 */
+	public function extra_plugin_links($links, $file){
+		if ($file == 'wp-html5-category-selector/wp-html5-category-selector.php') {
+            $links[] = '<a href="http://twitter.com/MikeRogers0">Tweet me</a>';
+        }
+        return $links;
+	}
+}
+
+
+/** 
+ * Start the plugin.
+ */
 $wp_html5_category_selector = new wp_html5_category_selector();
 ?>
