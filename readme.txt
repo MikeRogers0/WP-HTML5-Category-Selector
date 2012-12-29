@@ -1,8 +1,8 @@
 === WP HTML5 Category Selector ===
 Contributors: Rogem002
 Tags: html5,categories,filter,post,category
-Requires at least: 3.4.1
-Tested up to: 3.4.1
+Requires at least: 3.5
+Tested up to: 3.5
 
 Adds a filter input field to the category box on the add/edit post page.
 
