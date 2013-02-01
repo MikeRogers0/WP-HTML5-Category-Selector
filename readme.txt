@@ -41,6 +41,7 @@ Either empty the field labeled "filter".
 
 = 1.2.0 =
 * Made filter box a search type, so removed the filter button. 
+* Removed twitter link on plugins page.
 
 = 1.1.0 =
 * Custom post type support
