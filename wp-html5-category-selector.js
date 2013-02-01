@@ -8,7 +8,7 @@
 		// Cache the elements we use often.
 		var $filterCats = $("#filterCats");
 		var $categorydiv_selectit = $("#categorydiv .selectit");
-		var $categoryFilter_clear = $("#category-filter .clear");
+		//var $categoryFilter_clear = $("#category-filter .clear");
 		
 		// Updates the shown categories based on the filter value.
 		function updateFiltered(){		

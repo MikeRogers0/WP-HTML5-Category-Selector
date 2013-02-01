@@ -3,7 +3,7 @@
 Plugin Name: WP HTML5 Category Selector
 Plugin URI: http://www.fullondesign.co.uk/projects/wp-html5-category-selector-wordpress-plugin
 Description: Adds a filter input field to the category box on the add/edit post pages.
-Version: 1.2.1
+Version: 1.2.0
 Author: Mike Rogers
 Author URI: http://www.fullondesign.co.uk/
 Text Domain: wp_html5_category_selector

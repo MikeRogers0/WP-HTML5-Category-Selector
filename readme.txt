@@ -31,13 +31,16 @@ Just type in the field labeled "filter". As you type it will filter.
 
 = How do I get all my categories back? =
 
-Either empty the field labeled "filter", or click the "clear" link next to it.
+Either empty the field labeled "filter".
 
 == Screenshots ==
 
 1. Screenshot of the field it adds.
 
 == Changelog ==
+
+= 1.2.0 =
+* Made filter box a search type, so removed the filter button. 
 
 = 1.1.0 =
 * Custom post type support
