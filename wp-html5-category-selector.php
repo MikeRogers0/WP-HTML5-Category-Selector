@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP HTML5 Category Selector
-Plugin URI: http://www.fullondesign.co.uk/projects/wp-html5-category-selector-wordpress-plugin
+Plugin URI: https://github.com/MikeRogers0/WP-HTML5-Category-Selector
 Description: Adds a filter input field to the category box on the add/edit post pages.
 Version: 1.2.0
 Author: Mike Rogers
@@ -43,7 +43,6 @@ class wp_html5_category_selector {
 	 */
 	public function __construct() {
 		add_action('admin_init', array($this, 'admin_init') );
-		add_filter('plugin_row_meta', array($this, 'extra_plugin_links'), 10, 2);
 	}
 	
 	/**
@@ -69,17 +68,6 @@ class wp_html5_category_selector {
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('wp_html5_category_selector');
 		wp_enqueue_style('wp_html5_category_selector');
-	}
-	
-	/**
-	 * Adds my twitter link to the plugins page.
-	 *
-	 */
-	public function extra_plugin_links($links, $file){
-		if ($file == 'wp-html5-category-selector/wp-html5-category-selector.php') {
-            $links[] = '<a href="http://twitter.com/MikeRogers0">Tweet me</a>';
-        }
-        return $links;
 	}
 }
 
