@@ -2,7 +2,7 @@
 Contributors: Rogem002
 Tags: html5,categories,filter,post,category
 Requires at least: 3.5
-Tested up to: 3.5
+Tested up to: 4.3
 
 Adds a filter input field to the category box on the add/edit post page.
 
@@ -10,12 +10,12 @@ Adds a filter input field to the category box on the add/edit post page.
 
 <p>The WP HTML5 Category Selector Plugin adds a filter input field to the category box on the add/edit post page. Useful for bloggers who have lots of categories. </p>
 
-<p>If you have any questions or feedback, I'm <a href="http://twitter.com/MikeRogers0">@MikeRogers0</a> on twitter.</p>
+<p>If you have any questions or feedback, I'm <a href="http://twitter.com/MikeRogers0">@MikeRogers0</a> on twitter. You can contribute via <a href="https://github.com/MikeRogers0/WP-HTML5-Category-Selector">GitHub</a>.</p>
 
 <h3>Requirements</h3>
 <ul>
-	<li>PHP5 or better</li>
-	<li>JavaScript enabled in the users browser</li>
+  <li>PHP5 or better</li>
+  <li>JavaScript enabled in the users browser</li>
 </ul>
 
 == Installation ==
@@ -31,13 +31,16 @@ Just type in the field labeled "filter". As you type it will filter.
 
 = How do I get all my categories back? =
 
-Either empty the field labeled "filter".
+Clear the field labeled "filter".
 
 == Screenshots ==
 
-1. Screenshot of the field it adds.
+1. This is what the filtering field looks like
 
 == Changelog ==
+
+= 1.3.0 =
+* Switched over to a CSS query based filtering solution, this should make things more efficient.
 
 = 1.2.0 =
 * Made filter box a search type, so removed the filter button. 
@@ -49,27 +52,16 @@ Either empty the field labeled "filter".
 * Updated descriptions
 * Improved internationalisation
 
-= 1.0.3 =
-* Just a small update
-
-= 1.0.2 =
-* Adding support for custom post types & tidying up code a little.
-
-= 1.0.1 =
-* Moved JS to bottom of page.
-
 = 1.0.0 =
 * Inital Release
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+Filtering is now much more efficient, it shouldn't lock up your browser if you have 5,000 categories.
+
 = 1.1.0 =
 Better performance & updated the link to my twitter account.
-
-= 1.0.3 =
-Just an update for app themes - no big need to upgrade.
-
-= 1.0.2 =
-Support for custom post types.
 
 = 1.0.1 =
 Should be a little faster to load.

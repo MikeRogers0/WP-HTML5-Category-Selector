@@ -2,7 +2,7 @@
 
 The WP HTML5 Category Selector Plugin adds a filter input field to the category box on the add/edit post page. Useful for bloggers who have lots of categories.
 
-If you have any questions or feedback, I'm <a href="http://twitter.com/MikeRogers0">@MikeRogers0</a> on twitter.
+If you have any questions or feedback, I'm <a href="http://twitter.com/MikeRogers0">@MikeRogers0</a> on twitter. You can contribute via <a href="https://github.com/MikeRogers0/WP-HTML5-Category-Selector">GitHub</a>.
 
 ##Requirements
 
@@ -22,9 +22,12 @@ Just type in the field labeled "filter". As you type it will filter.
 
 ###How do I get all my categories back?
 
-Either empty the field labeled "filter".
+Clear the field labeled "filter".
 
 ##Changelog
+
+###1.3.0
+* Switched over to a CSS query based filtering solution, this should make things more efficient.
 
 ###1.2.0
 * Made filter box a search type, so removed the filter button. 
@@ -34,15 +37,6 @@ Either empty the field labeled "filter".
 * Custom post type support (Only for categorys in custom post types)
 * Updated descriptions
 * Improved internationalisation
-
-###1.0.3
-* Just a small update
-
-###1.0.2
-* Adding support for custom post types & tidying up code a little.
-
-###1.0.1
-* Moved JS to bottom of page.
 
 ### 1.0.0
 * Inital Release
