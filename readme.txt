@@ -1,8 +1,11 @@
 === WP HTML5 Category Selector ===
 Contributors: Rogem002
 Tags: html5,categories,filter,post,category
+Stable tag: trunk
 Requires at least: 3.5
 Tested up to: 4.3
+License: GPLv2
+Donate link: https://www.paypal.me/MikeRogers0
 
 Adds a filter input field to the category box on the add/edit post page.
 
@@ -10,7 +13,7 @@ Adds a filter input field to the category box on the add/edit post page.
 
 <p>The WP HTML5 Category Selector Plugin adds a filter input field to the category box on the add/edit post page. Useful for bloggers who have lots of categories. </p>
 
-<p>If you have any questions or feedback, I'm <a href="http://twitter.com/MikeRogers0">@MikeRogers0</a> on twitter. You can contribute via <a href="https://github.com/MikeRogers0/WP-HTML5-Category-Selector">GitHub</a>.</p>
+<p>If you have any questions or feedback, I'm <a href="https://twitter.com/MikeRogers0">@MikeRogers0</a> on twitter. You can contribute via <a href="https://github.com/MikeRogers0/WP-HTML5-Category-Selector">GitHub</a>.</p>
 
 <h3>Requirements</h3>
 <ul>
